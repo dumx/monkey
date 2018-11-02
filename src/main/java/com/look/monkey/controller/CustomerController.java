@@ -1,10 +1,9 @@
 package com.look.monkey.controller;
 
-import java.util.Collection;
-import java.util.List;
-
-import javax.validation.constraints.NotNull;
-
+import com.look.monkey.entity.Customer;
+import com.look.monkey.repository.CustomerRepository;
+import com.look.monkey.repository.NamesOnly;
+import com.look.monkey.repository.extend.CustomerExtendRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -12,10 +11,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.look.monkey.entity.Customer;
-import com.look.monkey.repository.CustomerRepository;
-import com.look.monkey.repository.NamesOnly;
-import com.look.monkey.repository.extend.CustomerExtendRepository;
+import javax.validation.constraints.NotNull;
+import java.util.Collection;
+import java.util.List;
 
 @RestController
 @RequestMapping("/monkey/customers")

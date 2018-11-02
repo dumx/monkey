@@ -15,11 +15,10 @@
  */
 package com.look.monkey.service;
 
-import java.util.List;
-
+import com.look.monkey.entity.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
 
-import com.look.monkey.entity.User;
+import java.util.List;
 
 
 /**

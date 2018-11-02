@@ -1,0 +1,23 @@
+spring:
+  profiles.active: "@spring.profiles.active@"
+  datasource:
+     url: "@datasource.url@"
+     driver-class-name: "@datasource.driver@"
+     username: "@datasource.username@"
+     password: "@datasource.password@"
+  jpa:
+     show-sql: true
+     hibernate.ddl-auto: "@datasource.jpa.ddl-auto@"
+     database-platform: "@datasource.dialect@"
+    
+logging:
+  path: ./logs
+  level:
+    com.look: trace
+    com.querydsl.jpa.impl: debug
+
+server:
+  port: 8080
+  servlet:
+    context-path: 
+
